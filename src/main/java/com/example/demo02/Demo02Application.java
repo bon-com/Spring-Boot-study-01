@@ -38,6 +38,12 @@ public class Demo02Application implements CommandLineRunner { // ①
                 var sc = new Scanner(System.in); // ④
                 int playerChoice = sc.nextInt();
                 
+                // 入力チェック
+                if (!Consts.JANKEN_INPUT_RANGE.contains(playerChoice)) {
+                    System.out.println("0～3の範囲で入力してください。\n");
+                    continue;
+                }
+                
                 // 終了判定
                 if (playerChoice == Consts.GAME_END) { // ⑤
                     System.out.println("ゲーム終了");

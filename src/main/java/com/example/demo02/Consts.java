@@ -1,5 +1,7 @@
 package com.example.demo02;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -17,4 +19,6 @@ public class Consts {
             "パー");
     /** ゲーム終了 */
     public static final int GAME_END = 0;
+    /** じゃんけん選択範囲 */
+    public static final List<Integer> JANKEN_INPUT_RANGE = Arrays.asList(0, 1, 2, 3);
 }
