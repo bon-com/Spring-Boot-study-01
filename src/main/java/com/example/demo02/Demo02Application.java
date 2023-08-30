@@ -65,7 +65,7 @@ public class Demo02Application implements CommandLineRunner { // ①
                         + "\n結果：" + result + "\n");
 
             } catch (InputMismatchException e) { // ⑦
-                System.out.println("0～2の数字を入力してください。\n");
+                System.out.println("0～3の数字を入力してください。\n");
                 
             }
         }
