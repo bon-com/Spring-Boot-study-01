@@ -56,7 +56,7 @@ public class Demo02Application implements CommandLineRunner { // ①
                         + "\n----------"
                         + "\nあなたの手：" + Consts.JANKEN_INFO.get(playerChoice)
                         + "\nCPUの手：" + Consts.JANKEN_INFO.get(comChoice)
-                        + "\n結果：" + result + "\n\n");
+                        + "\n結果：" + result + "\n");
 
             } catch (InputMismatchException e) { // ⑦
                 System.out.println("0～2の数字を入力してください。\n");
